@@ -1,0 +1,49 @@
+{
+  "error": {
+    "dataLoading": "Error during server connection"
+  },
+  "common": {
+    "notAuthenticated": "User is not authenticated.",
+    "loadingMore": "Loading more...",
+    "download": "Download file",
+    "dataDeleted": "Tk successfully deleted",
+    "yes": "Yes",
+    "no": "No",
+    "delete": ""
+  },
+  "pagination": {
+    "ariaLabels": {
+      "firstPage": "first page",
+      "previousPage": "previous page",
+      "nextPage": "next page",
+      "lastPage": "last page"
+    }
+  },
+  "filters": {
+    "field": "Field",
+    "value": "Value",
+    "addFilter": "Add filter",
+    "clearFilters": "Clear filters",
+    "filter": "Filter",
+    "operator": "Operator",
+    "operators": {
+      "equals": "equals",
+      "in": "in",
+      "specified": "specified",
+      "unspecified": "unspecified",
+      "contains": "contains"
+    }
+  },
+  "entities": {
+    "tk": {
+      "deleteDialog": {
+        "title": "Delete tk",
+        "description": "Are you sure?"
+      },
+      "noItems": "No tks available",
+      "id": "entities.tk.id",
+      "field1": "entities.tk.field1",
+      "field2": "entities.tk.field2"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "changelogDate": "20240301113040",
+  "clientRootFolder": "tk",
+  "databaseType": "sql",
+  "fields": [
+    {
+      "fieldName": "field1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "field2",
+      "fieldType": "Integer"
+    }
+  ],
+  "microserviceName": "tk",
+  "name": "Tk",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

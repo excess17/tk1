@@ -1,0 +1,89 @@
+{
+    "microservices": [
+        {
+            "name": "tk",
+            "stack": "spring-boot",
+            "healthCheckPath": "/management/health",
+            "dbms": "postgresql",
+            "commands": {
+                "pack": "mvn clean package -DskipTests -Pprod"
+            }
+        }
+    ],
+    "microfrontends": [
+        {
+            "name": "tk-table",
+            "customElement": "tk-table",
+            "stack": "react",
+            "type": "widget",
+            "group": "free",
+            "publicFolder": "public",
+            "titles": {
+                "en": "tk-table",
+                "it": "tk-table"
+            },
+            "apiClaims": [
+                {
+                    "name": "tk-api",
+                    "type": "internal",
+                    "serviceName": "tk"
+                }
+            ],
+            "commands": {
+                "run": "npm install && PORT=3000 npm start"
+            }
+        },
+        {
+            "name": "tk-details",
+            "customElement": "tk-details",
+            "stack": "react",
+            "type": "widget",
+            "group": "free",
+            "publicFolder": "public",
+            "titles": {
+                "en": "tk-details",
+                "it": "tk-details"
+            },
+            "apiClaims": [
+                {
+                    "name": "tk-api",
+                    "type": "internal",
+                    "serviceName": "tk"
+                }
+            ],
+            "commands": {
+                "run": "npm install && PORT=3001 npm start"
+            }
+        },
+        {
+            "name": "tk-form",
+            "customElement": "tk-form",
+            "stack": "react",
+            "type": "widget",
+            "group": "free",
+            "publicFolder": "public",
+            "titles": {
+                "en": "tk-form",
+                "it": "tk-form"
+            },
+            "apiClaims": [
+                {
+                    "name": "tk-api",
+                    "type": "internal",
+                    "serviceName": "tk"
+                }
+            ],
+            "commands": {
+                "run": "npm install && PORT=3002 npm start"
+            }
+        }
+    ],
+    "svc": [
+        "keycloak",
+        "postgresql"
+    ],
+    "name": "tk1",
+    "version": "0.0.1",
+    "description": "tk1 description",
+    "type": "bundle"
+}

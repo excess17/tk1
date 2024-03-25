@@ -1,0 +1,19 @@
+{
+  "error": {
+    "dataLoading": "Error during server connection"
+  },
+  "common": {
+    "widgetName": "Details about '{{widgetNamePlaceholder}}'",
+    "name": "Name",
+    "value": "Value",
+    "loading": "Loading...",
+    "notAuthenticated": "User is not authenticated."
+  },
+  "entities": {
+    "tk": {
+      "id": "entities.tk.id",
+      "field1": "entities.tk.field1",
+      "field2": "entities.tk.field2"
+    }
+  }
+}
